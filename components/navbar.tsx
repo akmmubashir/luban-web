@@ -12,12 +12,13 @@ export default function Navbar() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const pathname = usePathname()
 
-  // Navigation links that work on both homepage and other pages
+  // Navigation links matching Veloura style
   const navLinks = [
     { label: "Home", href: pathname === "/" ? "#hero" : "/#hero" },
+    { label: "Shop", href: "/products" },
+    { label: "Sale", href: "/products?filter=sale" },
+    { label: "Consultation", href: pathname === "/" ? "#contact" : "/#contact" },
     { label: "About", href: pathname === "/" ? "#story" : "/#story" },
-    { label: "Products", href: "/products" },
-    { label: "Blog", href: pathname === "/" ? "#blog" : "/#blog" },
     { label: "Contact", href: pathname === "/" ? "#contact" : "/#contact" },
   ]
 
@@ -26,7 +27,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#E8DCC6]/30"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex items-center justify-between h-20">
@@ -35,7 +36,7 @@ export default function Navbar() {
             <div className="relative w-40 h-16 md:w-52 md:h-20">
               <Image
                 src="/logo.png"
-                alt="Handmade Soap"
+                alt="logo"
                 fill
                 className="object-contain"
                 priority
@@ -43,46 +44,56 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <motion.div key={link.label}>
-                {link.href.startsWith('/') ? (
-                  <Link
-                    href={link.href}
-                    className="relative px-4 py-2 text-foreground/70 hover:text-primary transition-colors duration-200 text-sm font-medium rounded-full group"
-                  >
-                    {link.label}
-                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-300" />
-                  </Link>
-                ) : (
-                  <motion.a
-                    href={link.href}
-                    className="relative px-4 py-2 text-foreground/70 hover:text-primary transition-colors duration-200 text-sm font-medium rounded-full group"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    {link.label}
-                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-300" />
-                  </motion.a>
-                )}
-              </motion.div>
-            ))}
+          {/* Desktop Nav - Centered rounded buttons */}
+          <div className="hidden lg:flex items-center gap-2">
+            {navLinks.map((link, index) => {
+              const isActive = pathname === "/" && link.href === "#hero"
+              return (
+                <motion.div key={link.label}>
+                  {link.href.startsWith('/') ? (
+                    <Link
+                      href={link.href}
+                      className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
+                        isActive
+                          ? "bg-[#D4C4B0] text-[#5C4033]"
+                          : "bg-[#F5EDE0] text-[#5C4033] hover:bg-[#E8DCC6]"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <motion.a
+                      href={link.href}
+                      className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
+                        isActive
+                          ? "bg-[#D4C4B0] text-[#5C4033]"
+                          : "bg-[#F5EDE0] text-[#5C4033] hover:bg-[#E8DCC6]"
+                      }`}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      {link.label}
+                    </motion.a>
+                  )}
+                </motion.div>
+              )
+            })}
           </div>
 
-          {/* CTA Button + Mobile Menu */}
+          {/* Get Quote Button + Mobile Menu */}
           <div className="flex items-center gap-4">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsModalOpen(true)}
-              className="hidden md:block px-6 py-2.5 rounded-sm font-medium text-sm bg-primary text-white shadow-md shadow-primary/30 hover:shadow-lg hover:shadow-primary/40 transition-all"
+              className="hidden lg:block px-6 py-2.5 rounded-lg font-medium text-sm bg-[#5C4033] text-white shadow-md hover:bg-[#8B6F47] transition-all"
             >
               Get a Quote
             </motion.button>
 
             {/* Mobile Menu Button */}
             <button 
-              className="md:hidden p-2 rounded-full hover:bg-muted transition-colors" 
+              className="lg:hidden p-2 rounded-lg hover:bg-[#F5EDE0] transition-colors text-[#5C4033]" 
               onClick={() => setIsOpen(!isOpen)}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,14 +114,14 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden pb-6 space-y-1"
+            className="lg:hidden pb-6 space-y-2"
           >
             {navLinks.map((link) => (
               <div key={link.label}>
                 {link.href.startsWith('/') ? (
                   <Link
                     href={link.href}
-                    className="block py-3 px-4 text-foreground/70 hover:text-primary hover:bg-muted rounded-lg transition-all"
+                    className="block py-3 px-4 text-[#5C4033] hover:bg-[#F5EDE0] rounded-lg transition-all bg-[#F5EDE0]"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}
@@ -118,7 +129,7 @@ export default function Navbar() {
                 ) : (
                   <a
                     href={link.href}
-                    className="block py-3 px-4 text-foreground/70 hover:text-primary hover:bg-muted rounded-lg transition-all"
+                    className="block py-3 px-4 text-[#5C4033] hover:bg-[#F5EDE0] rounded-lg transition-all bg-[#F5EDE0]"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}
@@ -131,7 +142,7 @@ export default function Navbar() {
                 setIsModalOpen(true)
                 setIsOpen(false)
               }}
-              className="w-full mt-4 px-6 py-3 rounded-sm font-medium bg-primary text-white shadow-md"
+              className="w-full mt-4 px-6 py-3 rounded-lg font-medium bg-[#5C4033] text-white shadow-md hover:bg-[#8B6F47] transition-all"
             >
               Get a Quote
             </button>
