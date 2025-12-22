@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
-const categories = ["All", "Body Lotion", "Essential Oil", "Handwash", "Insence Stick", "Sanitizer", "Shampoo", "Shower Gel", "Skin Protectant", "Water"]
+const categories = ["All", "Body Lotion", "Essential Oil", "Handwash", "Insence Stick", "Sanitizer", "Shampoo", "Shower Gel", "Skin Protectant", "Soap", "Water"]
 
 const allProducts = [
   // // Floral
@@ -40,9 +40,16 @@ const allProducts = [
   { id: 8, name: "Insence Stick Myrrh", category: "Insence Stick", scent: "Myrrh", price: "$9.99*", image: "/products/insence-stick-myrrh.png" },
   { id: 9, name: "Insence Stick Rose", category: "Insence Stick", scent: "Rose", price: "$9.99*", image: "/products/insence-stick-rose.png" },
   { id: 10, name: "Insence Stick Sandal", category: "Insence Stick", scent: "Sandal", price: "$9.99*", image: "/products/insence-stick-sandal.png" },
+  // Essential Oil
   { id: 11, name: "Frankincense Oil 200ml", category: "Essential Oil", scent: "Natural & Pure", price: "$9.99*", image: "/products/frankincense-oil-200ml.png" },
-  { id: 12, name: "Frankincense Shampoo 100ml", category: "Shampoo", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/frankincense-shampoo-100ml.png" },
-  { id: 13, name: "MYRRH Essential Oil 100ml", category: "Essential Oil", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/myrrh-essential-oil-10ml.png" },
+  { id: 12, name: "MYRRH Essential Oil 10ml", category: "Essential Oil", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/myrrh-essential-oil-10ml.png" },
+  { id: 13, name: "Frankincense Essential Oil 10ml", category: "Essential Oil", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/frankincense-essential-oil-10ml.png" },
+  { id: 14, name: "Frankincense Oil 100ml", category: "Essential Oil", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/frankincense-oil-100ml.png" },
+  // Shampoo
+  { id: 15, name: "Frankincense Shampoo 100ml", category: "Shampoo", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/frankincense-shampoo-100ml.png" },
+  { id: 16, name: "Frankincense Shampoo 200ml", category: "Shampoo", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/frankincense-shampoo-200ml.png" },
+  // Water
+  { id: 17, name: "Frankincense Water 100ml", category: "Water", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/frankincense-water-100ml.png" },
 ]
 
 export default function ProductsPage() {
