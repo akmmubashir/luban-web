@@ -79,8 +79,8 @@ export default function StorySection() {
           >
             <div className="relative h-125 lg:h-150 rounded-3xl overflow-hidden shadow-2xl">
               <Image 
-                src="/wrapped-handmade-organic-soap-bars-with-lavender-s.jpg" 
-                alt="Chemical-free handmade soap" 
+                src="/products/insence-stick-jasmine.png" 
+                alt="incense sticks jasmine" 
                 fill 
                 className="object-cover" 
               />

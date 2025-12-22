@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion } from "motion/react"
 import Link from "next/link"
+import Image from "next/image"
 import QuoteModal from "./quote-modal"
 
 export default function Hero() {
@@ -39,8 +40,8 @@ export default function Hero() {
             animate="visible"
             className="space-y-8"
           >
-            <motion.h1 
-              variants={itemVariants} 
+            <motion.h1
+              variants={itemVariants}
               className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-[#5C4033] leading-tight"
             >
               Because Your Skin Deserves
@@ -50,15 +51,15 @@ export default function Hero() {
               </span>
             </motion.h1>
 
-            <motion.p 
-              variants={itemVariants} 
+            <motion.p
+              variants={itemVariants}
               className="text-lg sm:text-xl text-[#5C4033]/80 leading-relaxed max-w-xl"
             >
               Gentle care, timeless beauty, crafted for you.
             </motion.p>
 
-            <motion.div 
-              variants={itemVariants} 
+            <motion.div
+              variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
               <motion.button
@@ -69,7 +70,7 @@ export default function Hero() {
               >
                 Take the Skin Quiz
               </motion.button>
-              
+
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -93,7 +94,7 @@ export default function Hero() {
           >
             {/* Gradient Background Shape */}
             <div className="absolute inset-0 bg-linear-to-br from-[#F5EDE0] via-[#E8DCC6] to-[#D4C4B0] rounded-3xl transform rotate-3 shadow-2xl" />
-            
+
             {/* Product Images Container */}
             <div className="relative h-full flex items-center justify-center p-8">
               <div className="grid grid-cols-2 gap-6 w-full max-w-md">
@@ -104,7 +105,9 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.5 }}
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
-                  <div className="w-24 h-48 bg-linear-to-b from-[#F5E6D3] to-[#E8DCC6] rounded-lg shadow-md" />
+                  <div className="w-24 h-48 bg-linear-to-b from-[#F5E6D3] to-[#E8DCC6] rounded-lg shadow-md overflow-hidden">
+                    <Image src="/products/frankincense-oil-200ml.png" alt="Product 1" className="object-cover w-full h-full" width={1000} height={1000} />
+                  </div>
                 </motion.div>
 
                 {/* Product 2 - Top Right */}
@@ -114,7 +117,9 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.7 }}
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
-                  <div className="w-32 h-32 bg-linear-to-br from-[#D4A574] to-[#C97D60] rounded-full shadow-md" />
+                  <div className="w-32 h-32 bg-linear-to-br from-[#D4A574] to-[#C97D60] rounded-full shadow-md overflow-hidden" >
+                    <Image src="/products/insence-stick-lavender.png" alt="Product 2" className="object-cover w-full h-full" width={1000} height={1000} />
+                  </div>
                 </motion.div>
 
                 {/* Product 3 - Bottom Left */}
@@ -124,7 +129,10 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.6 }}
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
-                  <div className="w-28 h-40 bg-linear-to-b from-[#F5EDE0] to-[#E8DCC6] rounded-lg shadow-md" />
+                  <div className="w-28 h-40 bg-linear-to-b from-[#F5EDE0] to-[#E8DCC6] rounded-lg shadow-md overflow-hidden">
+                    <Image src="/products/myrrh-essential-oil-10ml.png" alt="Product 3" className="object-cover w-full h-full" width={1000} height={1000} />
+                 
+                  </div>
                 </motion.div>
 
                 {/* Product 4 - Bottom Right */}
@@ -134,7 +142,9 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.8 }}
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
-                  <div className="w-20 h-52 bg-linear-to-b from-[#D4A574] to-[#8B6F47] rounded-lg shadow-md" />
+                  <div className="w-20 h-52 bg-linear-to-b from-[#D4A574] to-[#8B6F47] rounded-lg shadow-md overflow-hidden">
+                    <Image src="/products/frankincense-shampoo-100ml.png" alt="Product 4" className="object-cover w-full h-full" width={1000} height={1000} />
+                  </div>
                 </motion.div>
               </div>
             </div>
