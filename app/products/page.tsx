@@ -6,35 +6,49 @@ import { motion } from "motion/react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
-const categories = ["All", "Floral", "Herbal", "Citrus", "Luxury"]
+const categories = ["All", "Body Lotion", "Essential Oil", "Handwash", "Insence Stick", "Sanitizer", "Shampoo", "Shower Gel", "Skin Protectant", "Water"]
 
 const allProducts = [
-  // Floral
-  { id: 1, name: "Lavender Dream", category: "Floral", scent: "Calming Lavender", price: "$9.99", image: "/organic-soap-with-lavender-flowers-and-spa-element.jpg" },
-  { id: 2, name: "Rose Garden", category: "Floral", scent: "Delicate Rose", price: "$10.99", image: "/wrapped-handmade-organic-soap-bars-with-lavender-s.jpg" },
-  { id: 3, name: "Jasmine Bliss", category: "Floral", scent: "Sweet Jasmine", price: "$10.99", image: "/organic-soap-lavender-spa.jpg" },
-  
-  // Herbal
-  { id: 4, name: "Eucalyptus Mint", category: "Herbal", scent: "Cooling & Refreshing", price: "$9.99", image: "/organic-soap-bar-.jpg" },
-  { id: 5, name: "Peppermint Bark", category: "Herbal", scent: "Energizing Mint", price: "$9.99", image: "/soap-bars-on-a-plate.jpg" },
-  { id: 6, name: "Tea Tree Fresh", category: "Herbal", scent: "Purifying Tea Tree", price: "$9.99", image: "/stacked-organic-soap-bars-with-natural-twine.jpg" },
-  
-  // Citrus
-  { id: 7, name: "Citrus Burst", category: "Citrus", scent: "Fresh Lemon & Orange", price: "$9.99", image: "/organic-soap-ingredients-and-bottles.jpg" },
-  { id: 8, name: "Grapefruit Zest", category: "Citrus", scent: "Tangy Grapefruit", price: "$9.99", image: "/luxury-soaps-essential-oils-bottles-spa-wellness.jpg" },
-  { id: 9, name: "Lime Refresh", category: "Citrus", scent: "Zesty Lime", price: "$9.99", image: "/artisan-soap-making-process.jpg" },
-  
-  // Luxury
-  { id: 10, name: "Honey Oat", category: "Luxury", scent: "Soothing & Nourishing", price: "$10.99", image: "/stacked-organic-soap-bars-with-natural-twine.jpg" },
-  { id: 11, name: "Charcoal Detox", category: "Luxury", scent: "Fresh & Purifying", price: "$11.99", image: "/soap-bars-on-a-plate.jpg" },
-  { id: 12, name: "Shea Butter Luxe", category: "Luxury", scent: "Vanilla & Shea", price: "$12.99", image: "/luxury-soaps-essential-oils-spa.jpg" },
+  // // Floral
+  // { id: 1, name: "Lavender Dream", category: "Floral", scent: "Calming Lavender", price: "$9.99", image: "/organic-soap-with-lavender-flowers-and-spa-element.jpg" },
+  // { id: 2, name: "Rose Garden", category: "Floral", scent: "Delicate Rose", price: "$10.99", image: "/wrapped-handmade-organic-soap-bars-with-lavender-s.jpg" },
+  // { id: 3, name: "Jasmine Bliss", category: "Floral", scent: "Sweet Jasmine", price: "$10.99", image: "/organic-soap-lavender-spa.jpg" },
+
+  // // Herbal
+  // { id: 4, name: "Eucalyptus Mint", category: "Herbal", scent: "Cooling & Refreshing", price: "$9.99", image: "/organic-soap-bar-.jpg" },
+  // { id: 5, name: "Peppermint Bark", category: "Herbal", scent: "Energizing Mint", price: "$9.99", image: "/soap-bars-on-a-plate.jpg" },
+  // { id: 6, name: "Tea Tree Fresh", category: "Herbal", scent: "Purifying Tea Tree", price: "$9.99", image: "/stacked-organic-soap-bars-with-natural-twine.jpg" },
+
+  // // Citrus
+  // { id: 7, name: "Citrus Burst", category: "Citrus", scent: "Fresh Lemon & Orange", price: "$9.99", image: "/organic-soap-ingredients-and-bottles.jpg" },
+  // { id: 8, name: "Grapefruit Zest", category: "Citrus", scent: "Tangy Grapefruit", price: "$9.99", image: "/luxury-soaps-essential-oils-bottles-spa-wellness.jpg" },
+  // { id: 9, name: "Lime Refresh", category: "Citrus", scent: "Zesty Lime", price: "$9.99", image: "/artisan-soap-making-process.jpg" },
+
+  // // Luxury
+  // { id: 10, name: "Honey Oat", category: "Luxury", scent: "Soothing & Nourishing", price: "$10.99", image: "/stacked-organic-soap-bars-with-natural-twine.jpg" },
+  // { id: 11, name: "Charcoal Detox", category: "Luxury", scent: "Fresh & Purifying", price: "$11.99", image: "/soap-bars-on-a-plate.jpg" },
+  // { id: 12, name: "Shea Butter Luxe", category: "Luxury", scent: "Vanilla & Shea", price: "$12.99", image: "/luxury-soaps-essential-oils-spa.jpg" },
+
+  // Insence Stick
+  { id: 1, name: "Insence Stick Amber", category: "Insence Stick", scent: "Amber", price: "$9.99*", image: "/products/insence-stick-amber.png" },
+  { id: 2, name: "Insence Stick Cherry", category: "Insence Stick", scent: "Cherry", price: "$9.99*", image: "/products/insence-stick-cherry.png" },
+  { id: 3, name: "Insence Stick Jasmine", category: "Insence Stick", scent: "Jasmine", price: "$9.99*", image: "/products/insence-stick-jasmine.png" },
+  { id: 4, name: "Insence Stick Lavender", category: "Insence Stick", scent: "Lavender", price: "$9.99*", image: "/products/insence-stick-lavender.png" },
+  { id: 5, name: "Insence Stick Lemon Grass", category: "Insence Stick", scent: "Lemon Grass", price: "$9.99*", image: "/products/insence-stick-lemon-grass.png" },
+  { id: 6, name: "Insence Stick Mint", category: "Insence Stick", scent: "Mint", price: "$9.99*", image: "/products/insence-stick-mint.png" },
+  { id: 7, name: "Insence Stick Myrrh", category: "Insence Stick", scent: "Myrrh", price: "$9.99*", image: "/products/insence-stick-myrrh.png" },
+  { id: 8, name: "Insence Stick Rose", category: "Insence Stick", scent: "Rose", price: "$9.99*", image: "/products/insence-stick-rose.png" },
+  { id: 9, name: "Insence Stick Sandal", category: "Insence Stick", scent: "Sandal", price: "$9.99*", image: "/products/insence-stick-sandal.png" },
+  { id: 10, name: "Frankincense Oil 200ml", category: "Essential Oil", scent: "Natural & Pure", price: "$9.99*", image: "/products/frankincense-oil-200ml.png" },
+  { id: 11, name: "Frankincense Shampoo 100ml", category: "Shampoo", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/frankincense-shampoo-100ml.png" },
+  { id: 12, name: "MYRRH Essential Oil 100ml", category: "Essential Oil", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/myrrh-essential-oil-10ml.png" },
 ]
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All")
 
-  const filteredProducts = selectedCategory === "All" 
-    ? allProducts 
+  const filteredProducts = selectedCategory === "All"
+    ? allProducts
     : allProducts.filter(product => product.category === selectedCategory)
 
   return (
@@ -64,19 +78,21 @@ export default function ProductsPage() {
         <section className="py-8 bg-background border-b border-border">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
             <div className="flex flex-wrap justify-center gap-3">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-2 rounded-sm text-sm font-medium transition-all ${
-                    selectedCategory === category
+              {categories.map((category) => {
+                const hasProducts = category === "All" || allProducts.some(product => product.category === category)
+                return hasProducts ? (
+                  <button
+                    key={category}
+                    onClick={() => setSelectedCategory(category)}
+                    className={`cursor-pointer px-6 py-2 rounded-sm text-sm font-medium transition-all ${selectedCategory === category
                       ? "bg-primary text-primary-foreground"
                       : "bg-secondary text-secondary-foreground hover:bg-primary/10"
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
+                      }`}
+                  >
+                    {category}
+                  </button>
+                ) : null
+              })}
             </div>
           </div>
         </section>
@@ -126,7 +142,7 @@ export default function ProductsPage() {
                         {product.name}
                       </h3>
                       <p className="text-sm text-muted-foreground mb-4">{product.scent}</p>
-                      
+
                       <div className="flex items-center justify-between">
                         <span className="text-xl font-serif text-primary">
                           {product.price}
