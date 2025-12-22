@@ -36,12 +36,13 @@ const allProducts = [
   { id: 4, name: "Insence Stick Lavender", category: "Insence Stick", scent: "Lavender", price: "$9.99*", image: "/products/insence-stick-lavender.png" },
   { id: 5, name: "Insence Stick Lemon Grass", category: "Insence Stick", scent: "Lemon Grass", price: "$9.99*", image: "/products/insence-stick-lemon-grass.png" },
   { id: 6, name: "Insence Stick Mint", category: "Insence Stick", scent: "Mint", price: "$9.99*", image: "/products/insence-stick-mint.png" },
-  { id: 7, name: "Insence Stick Myrrh", category: "Insence Stick", scent: "Myrrh", price: "$9.99*", image: "/products/insence-stick-myrrh.png" },
-  { id: 8, name: "Insence Stick Rose", category: "Insence Stick", scent: "Rose", price: "$9.99*", image: "/products/insence-stick-rose.png" },
-  { id: 9, name: "Insence Stick Sandal", category: "Insence Stick", scent: "Sandal", price: "$9.99*", image: "/products/insence-stick-sandal.png" },
-  { id: 10, name: "Frankincense Oil 200ml", category: "Essential Oil", scent: "Natural & Pure", price: "$9.99*", image: "/products/frankincense-oil-200ml.png" },
-  { id: 11, name: "Frankincense Shampoo 100ml", category: "Shampoo", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/frankincense-shampoo-100ml.png" },
-  { id: 12, name: "MYRRH Essential Oil 100ml", category: "Essential Oil", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/myrrh-essential-oil-10ml.png" },
+  { id: 7, name: "Insence Stick Musk", category: "Insence Stick", scent: "Musk", price: "$9.99*", image: "/products/insence-stick-musk.png" },
+  { id: 8, name: "Insence Stick Myrrh", category: "Insence Stick", scent: "Myrrh", price: "$9.99*", image: "/products/insence-stick-myrrh.png" },
+  { id: 9, name: "Insence Stick Rose", category: "Insence Stick", scent: "Rose", price: "$9.99*", image: "/products/insence-stick-rose.png" },
+  { id: 10, name: "Insence Stick Sandal", category: "Insence Stick", scent: "Sandal", price: "$9.99*", image: "/products/insence-stick-sandal.png" },
+  { id: 11, name: "Frankincense Oil 200ml", category: "Essential Oil", scent: "Natural & Pure", price: "$9.99*", image: "/products/frankincense-oil-200ml.png" },
+  { id: 12, name: "Frankincense Shampoo 100ml", category: "Shampoo", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/frankincense-shampoo-100ml.png" },
+  { id: 13, name: "MYRRH Essential Oil 100ml", category: "Essential Oil", scent: "Soft & Nourishing", price: "$9.99*", image: "/products/myrrh-essential-oil-10ml.png" },
 ]
 
 export default function ProductsPage() {
