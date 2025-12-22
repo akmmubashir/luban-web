@@ -130,7 +130,7 @@ export default function Hero() {
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
                   <div className="w-28 h-40 bg-linear-to-b from-[#F5EDE0] to-[#E8DCC6] rounded-lg shadow-md overflow-hidden">
-                    <Image src="/products/myrrh-essential-oil-10ml.png" alt="Product 3" className="object-cover w-full h-full" width={1000} height={1000} />
+                    <Image src="/products/frankincense-shampoo-200ml.png" alt="Product 3" className="object-cover w-full h-full" width={1000} height={1000} />
                  
                   </div>
                 </motion.div>
@@ -143,7 +143,7 @@ export default function Hero() {
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
                   <div className="w-20 h-52 bg-linear-to-b from-[#D4A574] to-[#8B6F47] rounded-lg shadow-md overflow-hidden">
-                    <Image src="/products/frankincense-shampoo-100ml.png" alt="Product 4" className="object-cover w-full h-full" width={1000} height={1000} />
+                    <Image src="/products/frankincense-body-lotion-500ml.png" alt="Product 4" className="object-cover w-full h-full" width={1000} height={1000} />
                   </div>
                 </motion.div>
               </div>
