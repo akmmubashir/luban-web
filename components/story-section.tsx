@@ -27,7 +27,7 @@ export default function StorySection() {
             <h2 className="heading-md text-foreground leading-tight">
               It's All About
               <br />
-              <span className="gradient-text bg-gradient-to-r from-primary via-primary-dark to-accent bg-clip-text text-transparent">
+              <span className="text-foreground! gradient-text bg-linear-to-r from-primary via-primary-dark to-accent bg-clip-text">
                 Chemical-Free Soap
               </span>
             </h2>
@@ -77,7 +77,7 @@ export default function StorySection() {
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-125 lg:h-150 rounded-3xl overflow-hidden shadow-2xl">
               <Image 
                 src="/wrapped-handmade-organic-soap-bars-with-lavender-s.jpg" 
                 alt="Chemical-free handmade soap" 
@@ -86,7 +86,7 @@ export default function StorySection() {
               />
               
               {/* Decorative gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-primary/20 to-transparent" />
             </div>
 
             {/* Testimonial Card Overlay */}
@@ -104,7 +104,7 @@ export default function StorySection() {
                 "Love the smell. Love the texture, love the lather!!!"
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-dark" />
+                <div className="w-10 h-10 rounded-full bg-linear-to-br from-primary to-primary-dark" />
                 <div>
                   <p className="font-bold text-foreground">Jenny Vollmer</p>
                   <p className="text-sm text-muted-foreground">Verified Customer</p>

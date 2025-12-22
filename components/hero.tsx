@@ -29,7 +29,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="hero" className="relative w-full min-h-screen flex items-center py-20 bg-gradient-to-br from-[#FFF8F0] via-[#F5EDE0] to-[#E8DCC6]">
+    <section id="hero" className="relative w-full min-h-screen flex items-center py-20 bg-linear-to-br from-[#FFF8F0] via-[#F5EDE0] to-[#E8DCC6]">
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Text Content */}
@@ -89,10 +89,10 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="relative h-[600px] lg:h-[700px]"
+            className="relative h-150 lg:h-175"
           >
             {/* Gradient Background Shape */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#F5EDE0] via-[#E8DCC6] to-[#D4C4B0] rounded-3xl transform rotate-3 shadow-2xl" />
+            <div className="absolute inset-0 bg-linear-to-br from-[#F5EDE0] via-[#E8DCC6] to-[#D4C4B0] rounded-3xl transform rotate-3 shadow-2xl" />
             
             {/* Product Images Container */}
             <div className="relative h-full flex items-center justify-center p-8">
@@ -104,7 +104,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.5 }}
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
-                  <div className="w-24 h-48 bg-gradient-to-b from-[#F5E6D3] to-[#E8DCC6] rounded-lg shadow-md" />
+                  <div className="w-24 h-48 bg-linear-to-b from-[#F5E6D3] to-[#E8DCC6] rounded-lg shadow-md" />
                 </motion.div>
 
                 {/* Product 2 - Top Right */}
@@ -114,7 +114,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.7 }}
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
-                  <div className="w-32 h-32 bg-gradient-to-br from-[#D4A574] to-[#C97D60] rounded-full shadow-md" />
+                  <div className="w-32 h-32 bg-linear-to-br from-[#D4A574] to-[#C97D60] rounded-full shadow-md" />
                 </motion.div>
 
                 {/* Product 3 - Bottom Left */}
@@ -124,7 +124,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.6 }}
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
-                  <div className="w-28 h-40 bg-gradient-to-b from-[#F5EDE0] to-[#E8DCC6] rounded-lg shadow-md" />
+                  <div className="w-28 h-40 bg-linear-to-b from-[#F5EDE0] to-[#E8DCC6] rounded-lg shadow-md" />
                 </motion.div>
 
                 {/* Product 4 - Bottom Right */}
@@ -134,7 +134,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.8 }}
                   className="relative h-64 bg-white/80 rounded-2xl p-6 shadow-lg flex items-center justify-center"
                 >
-                  <div className="w-20 h-52 bg-gradient-to-b from-[#D4A574] to-[#8B6F47] rounded-lg shadow-md" />
+                  <div className="w-20 h-52 bg-linear-to-b from-[#D4A574] to-[#8B6F47] rounded-lg shadow-md" />
                 </motion.div>
               </div>
             </div>

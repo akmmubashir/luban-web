@@ -85,6 +85,7 @@ export default function ProductsPage() {
         <section className="section-padding bg-background">
           <div className="max-w-7xl mx-auto">
             <motion.div
+              key={selectedCategory}
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
               initial="hidden"
               animate="visible"
@@ -102,7 +103,6 @@ export default function ProductsPage() {
                     hidden: { opacity: 0, y: 20 },
                     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
                   }}
-                  layout
                 >
                   <div className="card-modern overflow-hidden bg-white dark:bg-card h-full">
                     {/* Product Image */}

@@ -15,9 +15,9 @@ export default function Navbar() {
   // Navigation links matching Veloura style
   const navLinks = [
     { label: "Home", href: pathname === "/" ? "#hero" : "/#hero" },
-    { label: "Shop", href: "/products" },
-    { label: "Sale", href: "/products?filter=sale" },
-    { label: "Consultation", href: pathname === "/" ? "#contact" : "/#contact" },
+    { label: "Products", href: "/products" },
+    // { label: "Sale", href: "/products?filter=sale" },
+    // { label: "Consultation", href: pathname === "/" ? "#contact" : "/#contact" },
     { label: "About", href: pathname === "/" ? "#story" : "/#story" },
     { label: "Contact", href: pathname === "/" ? "#contact" : "/#contact" },
   ]
@@ -29,7 +29,7 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#E8DCC6]/30"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="group">
