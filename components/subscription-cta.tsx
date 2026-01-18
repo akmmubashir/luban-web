@@ -75,7 +75,7 @@ export default function SubscriptionCTA() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsModalOpen(true)}
-            className="btn-primary bg-white text-primary"
+            className="btn-primary bg-white text-primary cursor-pointer"
           >
             Get a Quote
           </motion.button>

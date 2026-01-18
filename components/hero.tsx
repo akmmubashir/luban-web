@@ -66,7 +66,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setIsModalOpen(true)}
-                className="px-8 py-3 rounded-lg bg-[#F5EDE0] border-2 border-[#5C4033] text-[#5C4033] font-medium text-sm transition-all hover:bg-[#E8DCC6]"
+                className="cursor-pointer px-8 py-3 rounded-lg bg-[#F5EDE0] border-2 border-[#5C4033] text-[#5C4033] font-medium text-sm transition-all hover:bg-[#E8DCC6]"
               >
                 Take the Skin Quiz
               </motion.button>

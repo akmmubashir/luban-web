@@ -60,7 +60,7 @@ export default function Footer() {
                   placeholder="Your email"
                   className="flex-1 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/50 text-sm focus:outline-none focus:border-primary"
                 />
-                <button className="px-6 py-2 rounded-full bg-gradient-to-r from-primary to-primary-dark text-white font-semibold text-sm hover:shadow-lg hover:shadow-primary/30 transition-all">
+                <button className="cursor-pointer px-6 py-2 rounded-full bg-linear-to-r from-primary to-primary-dark text-white font-semibold text-sm hover:shadow-lg hover:shadow-primary/30 transition-all">
                   Join
                 </button>
               </div>

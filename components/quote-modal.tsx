@@ -66,7 +66,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                 </div>
                 <button
                   onClick={onClose}
-                  className="p-2 hover:bg-muted rounded-sm transition-colors"
+                  className="p-2 hover:bg-muted rounded-sm transition-colors cursor-pointer"
                   aria-label="Close modal"
                 >
                   <X className="w-5 h-5 text-muted-foreground" />
@@ -159,13 +159,13 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
                   <button
                     type="button"
                     onClick={onClose}
-                    className="flex-1 btn-ghost"
+                    className="flex-1 btn-ghost cursor-pointer"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="flex-1 btn-primary"
+                    className="flex-1 btn-primary cursor-pointer"
                   >
                     Send Request
                   </button>

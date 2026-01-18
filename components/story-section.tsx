@@ -64,7 +64,7 @@ export default function StorySection() {
               whileHover={{ scale: 1.05 }} 
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsModalOpen(true)}
-              className="btn-secondary mt-4"
+              className="btn-secondary mt-4 cursor-pointer"
             >
               Get a Quote
             </motion.button>

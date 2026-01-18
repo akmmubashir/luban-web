@@ -86,14 +86,14 @@ export default function Navbar() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsModalOpen(true)}
-              className="hidden lg:block px-6 py-2.5 rounded-lg font-medium text-sm bg-[#5C4033] text-white shadow-md hover:bg-[#8B6F47] transition-all"
+              className="cursor-pointer hidden lg:block px-6 py-2.5 rounded-lg font-medium text-sm bg-[#5C4033] text-white shadow-md hover:bg-[#8B6F47] transition-all"
             >
               Get a Quote
             </motion.button>
 
             {/* Mobile Menu Button */}
             <button 
-              className="lg:hidden p-2 rounded-lg hover:bg-[#F5EDE0] transition-colors text-[#5C4033]" 
+              className="cursor-pointer lg:hidden p-2 rounded-lg hover:bg-[#F5EDE0] transition-colors text-[#5C4033]" 
               onClick={() => setIsOpen(!isOpen)}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,7 +142,7 @@ export default function Navbar() {
                 setIsModalOpen(true)
                 setIsOpen(false)
               }}
-              className="w-full mt-4 px-6 py-3 rounded-lg font-medium bg-[#5C4033] text-white shadow-md hover:bg-[#8B6F47] transition-all"
+              className="cursor-pointer w-full mt-4 px-6 py-3 rounded-lg font-medium bg-[#5C4033] text-white shadow-md hover:bg-[#8B6F47] transition-all"
             >
               Get a Quote
             </button>
