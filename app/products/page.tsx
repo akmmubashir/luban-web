@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
-const categories = ["All", "Body Lotion", "Essential Oil", "Handwash", "Insence Stick", "Moisturizing Cream", "Sanitizer", "Shampoo", "Shower Gel", "Skin Protectant", "Soap", "Water"]
+const categories = ["All", "Body Lotion", "Essential Oil", "Handwash", "Insence Stick", "Moisturizing Cream", "Sanitizer", "Soaps", "Shampoo", "Shower Gel", "Skin Protectant", "Soap", "Water"]
 
 const allProducts = [
   // // Floral
@@ -67,6 +67,27 @@ const allProducts = [
   // Jelly
   { id: 27, name: "Frankincense Jelly 70gm", category: "Skin Protectant", scent: "100% Natural", price: "$9.99*", image: "/products/frankincense-jelly-70gm.png" },
   { id: 28, name: "Frankincense Jelly 120gm", category: "Skin Protectant", scent: "100% Natural", price: "$9.99*", image: "/products/frankincense-jelly-120gm.png" },
+  // Soaps
+  { id: 29, name: "Almond Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/almond.png" },
+  { id: 30, name: "Charcoal Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/charcoal.png" },
+  { id: 31, name: "Dates Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/dates.png" },
+  { id: 32, name: "Frankincense Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/frankincense.png" },
+  { id: 33, name: "Camel Milk Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/camel-milk.png" },
+  { id: 34, name: "Green Apple Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/green-apple.png" },
+  { id: 35, name: "Indigo Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/indigo.png" },
+  { id: 36, name: "Jasmine Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/jasmine.png" },
+  { id: 37, name: "Lavender Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/lavender.png" },
+  { id: 38, name: "Lemon Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/lemon.png" },
+  { id: 39, name: "Musk Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/musk.png" },
+  { id: 40, name: "Myrrh Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/myrrh.png" },
+  { id: 41, name: "Neem Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/neem.png" },
+  { id: 42, name: "Oudh Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/oudh.png" },
+  { id: 43, name: "Papaya Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/papaya.png" },
+  { id: 44, name: "Rose Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/rose.png" },
+  { id: 45, name: "Saffron Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/saffron.png" },
+  { id: 46, name: "Sandalwood Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/sandalwood.png" },
+  { id: 47, name: "Turmeric Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/turmeric.png" },
+  { id: 48, name: "Vanilla Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/vanilla.png" },
 ]
 
 export default function ProductsPage() {

@@ -5,11 +5,11 @@ import { motion } from "motion/react"
 import { useInView } from "react-intersection-observer"
 
 const products = [
-  { id: 1, name: "Lavender Dream", scent: "Calming Lavender", price: "$9.99", image: "/organic-soap-with-lavender-flowers-and-spa-element.jpg" },
-  { id: 2, name: "Honey Oat", scent: "Soothing & Nourishing", price: "$10.99", image: "/stacked-organic-soap-bars-with-natural-twine.jpg" },
-  { id: 3, name: "Rose Garden", scent: "Delicate Rose", price: "$10.99", image: "/wrapped-handmade-organic-soap-bars-with-lavender-s.jpg" },
-  { id: 4, name: "Eucalyptus Mint", scent: "Cooling & Refreshing", price: "$9.99", image: "/organic-soap-bar-.jpg" },
-  { id: 5, name: "Charcoal Detox", scent: "Fresh & Purifying", price: "$11.99", image: "/soap-bars-on-a-plate.jpg" },
+  { id: 1, name: "Oudh Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/oudh.png" },
+  { id: 2, name: "Papaya Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/papaya.png" },
+  { id: 3, name: "Rose Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/rose.png" },
+  { id: 4, name: "Saffron Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/saffron.png" },
+  { id: 5, name: "Sandalwood Soap", category: "Soaps", scent: "100% Natural & Pure", price: "$9.99*", image: "/products/soaps/sandalwood.png" },
 ]
 
 export default function ProductGallery() {
@@ -70,7 +70,7 @@ export default function ProductGallery() {
                     {product.name}
                   </h3>
                   <p className="text-sm text-muted-foreground mb-3">{product.scent}</p>
-                  
+
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-serif text-primary">
                       {product.price}
@@ -81,7 +81,7 @@ export default function ProductGallery() {
             </motion.div>
           ))}
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
